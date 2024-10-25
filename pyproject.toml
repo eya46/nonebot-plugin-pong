@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "nonebot-plugin-pong"
+version = "0.1.0"
+description = "ping -> pong"
+authors = ["eya46 <61458340+eya46@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 121
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "UP", "C", "T", "PYI", "PT", "Q", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
+
+[tool.ruff.lint.isort]
+length-sort = true
+force-sort-within-sections = true
