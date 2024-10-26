@@ -1,5 +1,4 @@
-from nonebot.plugin import PluginMetadata
-from nonebot.plugin.on import on_command
+from nonebot.plugin import PluginMetadata, on_command
 
 __plugin_meta__ = PluginMetadata(
     name="pong",
